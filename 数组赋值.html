@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 数组赋值
+//    let [a,b,c] = [11,22,33]
+//    console.log(a)
+//    console.log(b)
+//    console.log(c)
+
+    // 对象赋值
+    let json_obj = {
+        name: "noname",
+        age: 22,
+        email: "noname@qq.com"
+    }
+    // 使用与对象属性名一致的变量名
+    let {name,age,email} = json_obj
+    console.log(name,age,email)
+    // 使用别名
+    let {name:n,age:a,email:e} = json_obj
+    console.log(n,a,e)
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul,ol{
+            list-style: none;
+        }
+        li{
+            float:left;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><button>AAA</button></li>
+    <li><button>BBB</button></li>
+    <li><button>CCC</button></li>
+    <li><button>DDD</button></li>
+    <li><button>EEE</button></li>
+</ul>
+</body>
+</html>
+<script>
+    var Li = document.querySelectorAll("li");
+//    console.log(Li);
+    for(var i=0;i<Li.length;i++){
+//        console.log(Li[i]);
+        Li[i].index = i;
+        Li[i].onclick = function(){
+//            console.log('aa');
+            console.log(this.index);
+        }
+    }
+</script>
